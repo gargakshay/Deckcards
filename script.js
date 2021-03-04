@@ -29,8 +29,6 @@
 			deck[location1] = deck[location2];
 			deck[location2] = tmp;
 		}
-
-		renderDeck();
 	}
 
 	function renderDeck() {
@@ -64,7 +62,7 @@
 			arr2.unshift(arr1[index]);
 			arr1.splice(index, 1);
 		}
-
+		
 		if (!arr1.length) {
 			arr1.splice(0, 0, ...arr2);
 			arr2.splice(0, arr2.length);
